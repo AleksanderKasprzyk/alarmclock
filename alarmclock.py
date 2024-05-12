@@ -16,6 +16,7 @@ def alarm(seconds):
         seconds_left = time_left % 60
 
         print(f"{clear_and_return}Alarm will sound in: {minutes_left:02d}:{seconds_left:02d}")
+    playsound("alarm.mp3")
 
 minutes = int(input("How many minutes to wait: "))
 seconds = int(input("How many seconds to wait: "))
